@@ -18,7 +18,7 @@ pycparser==2.20
 pyOpenSSL==19.1.0
 PySocks==1.7.1
 requests==2.24.0
-setuptools==49.2.0.post20200714
+setuptools==49.2.0
 six==1.15.0
 toml==0.10.1
 urllib3==1.25.9
