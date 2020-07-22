@@ -23,10 +23,5 @@ def events():
     return render_template("events.html")
 
 
-@app.route("/beau")
-def salvador():
-    return "Hello, Beau"
-
-
 if __name__ == "__main__":
     app.run(debug=True)
