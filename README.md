@@ -22,9 +22,9 @@ Lastly Python is our chosen language for its ease of use.
 
  Open up your terminal and `cd` _Linux/Mac_ or `chdir` _Windows_ to cloned repository folder on your computer
 
-**Install** _Python Virtual Environment "pip"_ package using python package manager
-
 ### Setting up a virtual python environment
+
+**Install** _Python Virtual Environment "pip"_ package using python package manager
 
 `pip install virtualenv`
 
@@ -36,11 +36,11 @@ Lastly Python is our chosen language for its ease of use.
 
 _Mac/linux_
 
-`source mypython/bin/activate`
+`source dscmqwebsite/bin/activate`
 
 _Windows users_
 
-`mypthon\Scripts\activate`
+`dscmqwebsite\Scripts\activate`
 
 *Note*
 
@@ -82,7 +82,7 @@ _Windows Users_
 
 Success 😀 You should now see a prompt in your terminal with an IP address or URL where you can access the DSCMQ Website running locally on your computer
 
-### Recomended Editor
+### Recommended Editor
 
 I recommend VS Code, in part because you can run `code .` after you clone the repository in your terminal and then it will launch VS Code and you can finish the rest of the setup - its a nice workflow
 
