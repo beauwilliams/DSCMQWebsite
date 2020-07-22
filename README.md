@@ -8,8 +8,6 @@ This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
 [Website Link](https://dscmqwebsite.herokuapp.com/)
 
-### Technology Stack
-
 Flask is a lightweight web framework that allows us to build simple applications quickly.
 
 Gunicorn - aka Green Unicorn is a lightweight http server which is simple to use and compatible with a wide variety of software. It differs from a web server such as apache of nginx in that Gunicorn is an _application server_
@@ -24,9 +22,9 @@ Lastly Python is our chosen language for its ease of use.
 
  Open up your terminal and `cd` _Linux/Mac_ or `chdir` _Windows_ to cloned repository folder on your computer
 
-### Setting up a virtual python environment
-
 **Install** _Python Virtual Environment "pip"_ package using python package manager
+
+### Setting up a virtual python environment
 
 `pip install virtualenv`
 
@@ -38,11 +36,11 @@ Lastly Python is our chosen language for its ease of use.
 
 _Mac/linux_
 
-`source dscmqwebsite/bin/activate`
+`source mypython/bin/activate`
 
 _Windows users_
 
-`dscmqwebsite\Scripts\activate`
+`mypthon\Scripts\activate`
 
 *Note*
 
@@ -84,9 +82,39 @@ _Windows Users_
 
 Success 😀 You should now see a prompt in your terminal with an IP address or URL where you can access the DSCMQ Website running locally on your computer
 
-### Recommended Editor
+### Deploy the site to Heroku
 
-I recommend VS Code, in part because you can run `code .` after you clone the repository in your terminal and then it will launch VS Code and you can finish the rest of the setup - its a nice workflow
+_Install Heroku CLI and familiarise youself with it_
+
+We will create a heroku application and deploy it, using the "Procfile" located in the root directory of our project. It contains one instruction, "web: gunicorn wsgi:app" - which instructs Heroku to launch a your web app using Gunicorn as the http server
+
+_note: set your terminal to the project root directory first_
+
+`heroku create <name-to-give-app>`
+
+_check that a remote repository call heroku has been created_
+
+`git remote -v`
+
+Next we will push the master git repository, i.e this project to the heroku remote git repository we just created - it will also do some fancy stuff and deploy the app for us - neat!
+
+`git push heroku master`
+
+After a while the project will have been built and deployed and you should now see some output on your terminal confirming its success with link to your site.. see below first
+
+Lastly, and importantly, we need to create a 'Dyno' this is like a little virtual computer that runs our website on the heroku platform - otherwise we will see and error when running `heroku logs --tail` that suggests our web server is not running
+
+`heroku ps: scale web=1`
+
+Access your newly deployed site quickly
+
+`heroku open`
+
+
+### Recomended Editor
+
+I recommend VS Code, in part because you can run `code .` after you clone the repository in your terminal and then it will launch VS Code and you can finish the rest of the setup of your environment - its a nice workflow
+
 
 ### Troubleshooting
 
@@ -95,3 +123,6 @@ _Error: Could not import "wsgi"._
 1. Make sure you are in the root folder in your terminal before running `flask run`
 2. Check that your virtual environment is activated and that the dependencies were installed correctly in your virtual environment /bin folder - you can find the folder on your system and check for yourself
 
+_When checking heroku logs and see it says something along the lines of a webserver is not running GET / yada yada then run.._
+
+`heroku ps: scale web=1`
