@@ -8,6 +8,8 @@ This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
 [Website Link](https://dscmqwebsite.herokuapp.com/)
 
+## Technology Stack
+
 Flask is a lightweight web framework that allows us to build simple applications quickly.
 
 Gunicorn - aka Green Unicorn is a lightweight http server which is simple to use and compatible with a wide variety of software. It differs from a web server such as apache of nginx in that Gunicorn is an _application server_
@@ -111,7 +113,7 @@ Access your newly deployed site quickly
 `heroku open`
 
 
-### Recomended Editor
+### Recommended Editor
 
 I recommend VS Code, in part because you can run `code .` after you clone the repository in your terminal and then it will launch VS Code and you can finish the rest of the setup of your environment - its a nice workflow
 
