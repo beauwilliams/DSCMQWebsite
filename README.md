@@ -10,11 +10,15 @@ This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
 ## Technology Stack
 
-Flask is a lightweight web framework that allows us to build simple applications quickly.
+**Web Framework** Python/Flask is a lightweight web framework that allows us to build simple applications quickly.
 
-Gunicorn - aka Green Unicorn is a lightweight http server which is simple to use and compatible with a wide variety of software. It differs from a web server such as apache of nginx in that Gunicorn is an _application server_
+**Application Server** Gunicorn - aka Green Unicorn is a lightweight http server which is simple to use and compatible with a wide variety of software. It differs from a web server such as apache of nginx in that Gunicorn is an _application server_
 
-Lastly Python is our chosen language for its ease of use.
+**Hosting and Deployment** Heroku cloud plaftorm
+
+**Markup/Styling** HTML/CSS
+
+**Graphics/Application Logic** Javascript
 
 ## How to set up a development environment
 
