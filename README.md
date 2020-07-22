@@ -42,11 +42,11 @@ This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
 _Mac/linux_
 
-`source mypython/bin/activate`
+`source dscmqwebsite/bin/activate`
 
 _Windows users_
 
-`mypthon\Scripts\activate`
+`dscmqwebsite\Scripts\activate`
 
 *Note*
 
