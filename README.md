@@ -1,6 +1,6 @@
 # Macquarie University Developer Student Clubs Website
 
-![Screenshot](./screenshot.png)
+![demogif](https://im7.ezgif.com/tmp/ezgif-7-9f83eb60be5d.gif)
 
 👋 Welcome to our github repo
 
@@ -22,11 +22,11 @@ This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
 ## How to set up a development environment
 
- _Clone this repo to wherever you like to keep your files_
+_Clone this repo to wherever you like to keep your files_
 
- Ensure you have Python > 3.7 installed correctly on your machine -  [Guide](https://www.tutorialspoint.com/python/python_environment.htm)
+Ensure you have Python > 3.7 installed correctly on your machine - [Guide](https://www.tutorialspoint.com/python/python_environment.htm)
 
- Open up your terminal and `cd` _Linux/Mac_ or `chdir` _Windows_ to cloned repository folder on your computer
+Open up your terminal and `cd` _Linux/Mac_ or `chdir` _Windows_ to cloned repository folder on your computer
 
 **Install** _Python Virtual Environment "pip"_ package using python package manager
 
@@ -48,7 +48,7 @@ _Windows users_
 
 `dscmqwebsite\Scripts\activate`
 
-*Note*
+_Note_
 
 When you are finished working on the project, you can type `deactivate` to exit the virtual environment
 
@@ -72,15 +72,15 @@ We need to set some environment variables for our flask session. We could add th
 
 _Mac/Linux Users_
 
-`export FLASK_APP=wsgi.py ` - tells flask which the file name of our python app, note it will run fine without this command usually as flask will look for a file named app.py or wsgi.py of which we have the latter
+`export FLASK_APP=wsgi.py` - tells flask which the file name of our python app, note it will run fine without this command usually as flask will look for a file named app.py or wsgi.py of which we have the latter
 
-`export FLASK_ENV=development ` - runs a development version of the server with debugging enabled
+`export FLASK_ENV=development` - runs a development version of the server with debugging enabled
 
 _Windows Users_
 
-`set FLASK_APP=wsgi.py `
+`set FLASK_APP=wsgi.py`
 
-`set FLASK_ENV=development `
+`set FLASK_ENV=development`
 
 **Run the flask app**
 
@@ -116,11 +116,9 @@ Access your newly deployed site quickly
 
 `heroku open`
 
-
 ### Recommended Editor
 
 I recommend VS Code, in part because you can run `code .` after you clone the repository in your terminal and then it will launch VS Code and you can finish the rest of the setup of your environment - its a nice workflow
-
 
 ### Troubleshooting
 
