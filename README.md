@@ -1,12 +1,12 @@
 # Macquarie University Developer Student Clubs Website
 
-![demogif](https://im7.ezgif.com/tmp/ezgif-7-9f83eb60be5d.gif)
+![demogif](https://i.ibb.co/YQ80X6m/dscmqoptimised.gif)
 
 👋 Welcome to our github repo
 
 This application is currently deployed using Python/Flask/Gunicorn to heroku.
 
-[Website Link](https://dscmqwebsite.herokuapp.com/)
+[Website Link](https://dscmq.dev)
 
 ## Technology Stack
 
