@@ -13,7 +13,7 @@ def index():
     return render_template("/index.html")
 
 @app.route("/code-of-conduct.html")
-def codeOfConduct():
+def code-of-conduct():
     return render_template("code-of-conduct.html")
 
 # BEAU 17/11/20 -> Removed. No team page currently. #####TODO####
@@ -28,4 +28,4 @@ def events():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
