@@ -12,10 +12,14 @@ def home():
 def index():
     return render_template("/index.html")
 
+@app.route("/code-of-conduct.html")
+def codeOfConduct():
+    return render_template("code-of-conduct.html")
 
-@app.route("/team.html")
-def about():
-    return render_template("team.html")
+# BEAU 17/11/20 -> Removed. No team page currently. #####TODO####
+# @app.route("/team.html")
+# def about():
+#     return render_template("team.html")
 
 
 @app.route("/events.html")
