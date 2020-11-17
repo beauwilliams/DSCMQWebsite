@@ -13,7 +13,7 @@ def index():
     return render_template("/index.html")
 
 @app.route("/code-of-conduct.html")
-def code-of-conduct():
+def codeOfConduct():
     return render_template("code-of-conduct.html")
 
 # BEAU 17/11/20 -> Removed. No team page currently. #####TODO####
